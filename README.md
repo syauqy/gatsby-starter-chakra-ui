@@ -73,10 +73,4 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 - **[Gatsby Documentation](https://www.gatsbyjs.com/docs/).** 
 - **[Chakra UI Documentation](https://chakra-ui.com/docs/getting-started).** 
 
-
-
-## 💫 Deploy to your site
-
-[![Deploy to DO](https://www.deploytodo.com/do-btn-blue-ghost.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/syauqy/gatsby-starter-chakra-ui/tree/master&refcode=a9cb43de523c)
-
 <!-- AUTO-GENERATED-CONTENT:END -->
