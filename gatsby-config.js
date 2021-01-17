@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter + Chakra`,
+    title: `Gatsby Default Starter + Chakra UI`,
     description: `An unofficial Gatsby starter with Chakra UI component library.`,
     author: `@syauqy`,
   },

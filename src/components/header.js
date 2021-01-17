@@ -7,12 +7,21 @@ import { MoonIcon, SunIcon } from '@chakra-ui/icons'
 const Header = ({siteTitle}) => {
   const {colorMode, toggleColorMode} = useColorMode()
     return (
-        <Flex justify="center" align="center"
+            <header id="header"
             style={{
             background: `rebeccapurple`,
-            marginBottom: `1.45rem`
+            marginBottom: `1.45rem`,
+            transition: `box-shadow 0.2s ease 0s`,
+    position: `fixed`,
+    top: `0px`,
+    zIndex: 1,
+    left: `0px`,
+    right: `0px`,
+    borderTop: `6px solid rgb(56, 178, 172)`,
+    width: `100%`
         }}>
-          <Box 
+            <Flex justify="center" align="center">
+            <Box 
                 style={{
                 margin: `0 auto`,
                 maxWidth: 960,
@@ -39,7 +48,11 @@ const Header = ({siteTitle}) => {
                     : <SunIcon color="white" />}
             </IconButton>
             </Box>
-        </Flex>
+            </Flex>
+          
+        </header>
+
+        
     )
 }
 

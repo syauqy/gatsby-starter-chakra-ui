@@ -9,7 +9,7 @@ import {Heading, Text} from '@chakra-ui/react'
 
 
 const IndexPage = () => (
-  <Layout>
+     <Layout>
     <SEO title="Home" />
     <Heading as="h1" size="lg" mb="2">Hi people</Heading>
     <Text>Welcome to your new Gatsby site.</Text>
@@ -18,8 +18,10 @@ const IndexPage = () => (
       <Image />
     </div>
     <Link to="/page-2/"><Text color="purple.500">Go to page 2</Text></Link>
-    <Link to="/using-typescript/"><Text color="purple.500">Go to "Using TypeScript"</Text></Link>
+    <Link to="/using-chakra/"><Text color="teal.500">Go to Chakra UI example page</Text></Link>
+    <Link to="/using-typescript/"><Text color="blue.500">Go to "Using TypeScript"</Text></Link>
   </Layout>
+ 
 )
 
 export default IndexPage
