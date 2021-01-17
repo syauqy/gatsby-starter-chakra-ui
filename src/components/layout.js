@@ -8,9 +8,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { ChakraProvider, Link } from "@chakra-ui/react"
 
 import Header from "./header"
 import "./layout.css"
+
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -24,7 +26,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <ChakraProvider>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         style={{
@@ -41,10 +43,11 @@ const Layout = ({ children }) => {
         >
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          <Link href="https://www.gatsbyjs.com" isExternal color="purple.500">Gatsby</Link> and {` `}
+          <Link href="https://chakra-ui.com" isExternal color="teal.400">Chakra UI</Link>
         </footer>
       </div>
-    </>
+    </ChakraProvider>
   )
 }
 

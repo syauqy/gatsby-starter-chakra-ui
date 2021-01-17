@@ -3,13 +3,14 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import {Heading, Text} from '@chakra-ui/react'
 
 const SecondPage = () => (
   <Layout>
     <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+    <Heading as="h1" size="lg" mb="2">Hi from the second page</Heading>
+    <Text>Welcome to page 2</Text>
+    <Link to="/"><Text color="purple.500">Go back to the homepage</Text></Link>
   </Layout>
 )
 
