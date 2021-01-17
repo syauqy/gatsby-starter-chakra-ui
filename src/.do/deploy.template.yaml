@@ -1,0 +1,7 @@
+spec:
+ name: gatsby-starter-chakra-ui
+ static_sites:
+ - git:
+     branch: master
+     repo_clone_url: https://github.com/syauqy/gatsby-starter-chakra-ui.git
+   name: gatsby-starter-chakra-ui
